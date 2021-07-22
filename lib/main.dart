@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tutorial_flutter/view/cliente_view.dart';
+import 'package:tutorial_flutter/view/HomeScreen.dart';
 
-void main() => runApp(const Robinho());
+void main() => runApp(const HomeScreen());
