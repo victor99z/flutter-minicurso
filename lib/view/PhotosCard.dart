@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:tutorial_flutter/repository/PhotosRepository.dart';
 import 'package:tutorial_flutter/view/DetailScreen.dart';
@@ -15,7 +14,9 @@ class _PhotosCardState extends State<PhotosCard> {
   dynamic _lista = PhotosRepository().selectAllPhotos();
 
   _atualizaCard() {
-    _lista = PhotosRepository().selectAllPhotos();
+    setState(() {
+      _lista = PhotosRepository().selectAllPhotos();
+    });
   }
 
   @override
@@ -49,7 +50,10 @@ class _PhotosCardState extends State<PhotosCard> {
                           ),
                           ListTile(
                             title: (list[index] != null)
-                                ? Text('${list[index].getTitulo}')
+                                ? Text(
+                                    '${list[index].getTitulo}',
+                                    textAlign: TextAlign.center,
+                                  )
                                 : Text('Sem titulo'),
                           ),
                           Padding(

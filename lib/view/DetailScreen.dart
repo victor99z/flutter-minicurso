@@ -1,8 +1,6 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:tutorial_flutter/controller/PhotosController.dart';
-
 import 'HomeScreen.dart';
 
 class DetailScreen extends StatelessWidget {
@@ -41,6 +39,13 @@ class DetailScreen extends StatelessWidget {
               padding: const EdgeInsets.all(4.0),
               child: Text(
                 'Longitude: ${detail.getLongitude}',
+                style: TextStyle(color: Colors.black),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Text(
+                'Data: ${detail.getData}',
                 style: TextStyle(color: Colors.black),
               ),
             ),
