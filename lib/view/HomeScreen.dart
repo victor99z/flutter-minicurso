@@ -34,18 +34,3 @@ class _MyHomeState extends State<MyHome> {
     );
   }
 }
-
-/*
-
-
-FloatingActionButton(
-        backgroundColor: Colors.blueAccent,
-        onPressed: () => {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => GaleriaScreen()))
-        },
-        tooltip: 'Menu',
-        child: Icon(Icons.menu),
-      ),
-
-*/
